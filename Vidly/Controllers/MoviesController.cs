@@ -17,8 +17,10 @@ namespace Vidly.Controllers
 
             // return Content("HelloWorld");
             // return HttpNotFound();
-            return RedirectToAction("Index", "Home", new {page = 1,sortBy = "name" }); // redirect to home page
+            // return RedirectToAction("Index", "Home", new {page = 1,sortBy = "name" }); // redirect to home page
 
+
+            return View();
 
         }
 

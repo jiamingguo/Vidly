@@ -33,3 +33,9 @@ a project used to learn C# and ASP.NET
 - The normal way to do Custom routing in previous session is also needed since the attribute routing enabled after 2013
 - `routes.MapMvcAttributeRoutes();` method instead of `routes.MapRoute()`
 - You can also add constraints to it with Regex. Just like the old ways
+
+### Passing Data to Views
+- put the Model in View(#model) as a parameter
+- Or, you can use a ViewDataDictionary.
+  - `ViewData["Movie"] = movie;`
+- 
