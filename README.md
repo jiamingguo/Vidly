@@ -38,4 +38,6 @@ a project used to learn C# and ASP.NET
 - put the Model in View(#model) as a parameter
 - Or, you can use a ViewDataDictionary.
   - `ViewData["Movie"] = movie;`
-- 
+- Or, a ViewBag
+- IMPORTANT: These two are not the best practice.
+- the Best Practice is simply passing the model as a parameter (the first way above)

@@ -15,11 +15,12 @@ namespace Vidly.Controllers
         {
             var movie = new Movie(){ Name = "Shrek!"};
 
+            // ViewData["Movie"] = movie;
+
             // return Content("HelloWorld");
             // return HttpNotFound();
             // return RedirectToAction("Index", "Home", new {page = 1,sortBy = "name" }); // redirect to home page
-
-
+      
             return View();
 
         }
