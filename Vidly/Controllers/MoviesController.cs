@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -14,14 +15,24 @@ namespace Vidly.Controllers
             // here the return type is ActionResult. It could be other types if necessary.
         {
             var movie = new Movie(){ Name = "Shrek!"};
+            var customers = new List<Customer>
+            {
+                new Customer{ Name = "C1"},
+                new Customer{ Name = "C2"}
+            };
 
             // ViewData["Movie"] = movie;
 
             // return Content("HelloWorld");
             // return HttpNotFound();
             // return RedirectToAction("Index", "Home", new {page = 1,sortBy = "name" }); // redirect to home page
-      
-            return View();
+
+            var viewModel = new RandomMovieViewModel
+            {
+                theMovie = movie,
+                Customers = customers
+            };
+            return View(viewModel);
 
         }
 

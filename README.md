@@ -41,3 +41,12 @@ a project used to learn C# and ASP.NET
 - Or, a ViewBag
 - IMPORTANT: These two are not the best practice.
 - the Best Practice is simply passing the model as a parameter (the first way above)
+
+### View Model
+- When you want to display more than one object in the view;
+- In this Project, when we want to display Customer and Movie, you can't simply use Model;
+- So we create a new folder called ViewModels
+- Create new class (ViewModel) that contains both Movie and Customer object as attributes
+- Put this new ViewModel into View(#Model) as the Model parameter
+- Remember, change the @model delcaration on he top of Random.cshtml;
+- 
